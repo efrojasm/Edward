@@ -6,11 +6,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProyectoWeb.Models
 {
-    public class Login
+    public class Contacto
     {
         public int Id { get; set; }
-        public string User { get; set; }
-        public string Password { get; set; }
-        public string Tipo { get; set; }
+        public string Nombre { get; set; }
+        public string Mail { get; set; }
+        public string Mensaje { get; set; }
     }
 }

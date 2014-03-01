@@ -15,6 +15,6 @@ namespace ProyectoWeb.Models
         }
         public DbSet<Curriculum> Curriculums { get; set; }
         public DbSet<Recomendacion> Recomendaciones { get; set; }
-        public DbSet<Login> Logins { get; set; }
+        public DbSet<Contacto> Contactos { get; set; }
     }
 }

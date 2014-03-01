@@ -7,16 +7,16 @@ using ProyectoWeb.Models;
 
 namespace ProyectoWeb.Controllers
 {
-    public class CurriculumsController : Controller
+    public class RecomendacionesController : Controller
     {
         private ProyectoDb db = new ProyectoDb();
         //
-        // GET: /Curriculums/
+        // GET: /Recomendaciones/
 
         public ActionResult Index()
         {
-            List<Curriculum> Curriculums = db.Curriculums.ToList();
-            ViewBag.curriculums = Curriculums;
+            List<Recomendacion> Recomendaciones = db.Recomendaciones.ToList();
+            ViewBag.recomendaciones = Recomendaciones;
             return View();
         }
 
