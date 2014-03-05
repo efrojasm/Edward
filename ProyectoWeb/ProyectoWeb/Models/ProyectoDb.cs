@@ -13,7 +13,7 @@ namespace ProyectoWeb.Models
         {
 
         }
-        public DbSet<Curriculum> Curriculums { get; set; }
+        public DbSet<Home> Home { get; set; }
         public DbSet<Recomendacion> Recomendaciones { get; set; }
         public DbSet<Contacto> Contactos { get; set; }
     }

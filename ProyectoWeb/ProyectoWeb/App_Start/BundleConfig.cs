@@ -23,6 +23,12 @@ namespace ProyectoWeb
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
+            bundles.Add(new StyleBundle("~/Content/bootstrap/css").
+              Include("~/Content/bootstrap.css"));// add bundle bootstrap
+
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap/js")
+                .Include("~/Scripts/bootstrap.js"));//js 
+
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(

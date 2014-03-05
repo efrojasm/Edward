@@ -7,7 +7,7 @@ using ProyectoWeb.Models;
 
 namespace ProyectoWeb.Controllers
 {
-    public class CurriculumsController : Controller
+    public class HomeController : Controller
     {
         private ProyectoDb db = new ProyectoDb();
         //
@@ -15,8 +15,8 @@ namespace ProyectoWeb.Controllers
 
         public ActionResult Index()
         {
-            List<Curriculum> Curriculums = db.Curriculums.ToList();
-            ViewBag.curriculums = Curriculums;
+            List<Home> Home = db.Home.ToList();
+            ViewBag.home = Home;
             return View();
         }
 

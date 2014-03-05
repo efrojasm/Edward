@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProyectoWeb.Models
 {
-    public class Curriculum
+    public class Home
     {
         public int Id { get; set; }
         public string Nombre { get; set; }

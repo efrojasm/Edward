@@ -123,12 +123,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ContactosController.cs" />
-    <Compile Include="Controllers\CurriculumsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RecomendacionesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Curriculum.cs" />
+    <Compile Include="Models\Home.cs" />
     <Compile Include="Models\Contacto.cs" />
     <Compile Include="Models\ProyectoDb.cs" />
     <Compile Include="Models\Recomendacion.cs" />
@@ -231,7 +231,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Curriculums\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Contactos\Index.cshtml" />
     <Content Include="Views\Recomendaciones\Index.cshtml" />
   </ItemGroup>
