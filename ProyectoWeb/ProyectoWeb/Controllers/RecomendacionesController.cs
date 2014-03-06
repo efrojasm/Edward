@@ -20,6 +20,30 @@ namespace ProyectoWeb.Controllers
             return View();
         }
 
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        //
+        // POST: /Aulas/Create
+
+        [HttpPost]
+        public ActionResult Create(string nombre = "", string telefono = "", string email = "", string comentario = "")
+        {
+            Recomendacion nueva = new Recomendacion();
+            nueva.Nombre = nombre;
+            nueva.Telefono = telefono;
+            nueva.Mail = email;
+            nueva.Comentario = comentario;
+            if (ModelState.IsValid)
+            {
+                db.Recomendaciones.Add(nueva);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
         protected override void Dispose(bool disposing)
         {
             db.Dispose();

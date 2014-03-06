@@ -24,7 +24,9 @@ namespace ProyectoWeb.Controllers
         {
             db.Dispose();
             base.Dispose(disposing);
+
         }
+
 
     }
 }

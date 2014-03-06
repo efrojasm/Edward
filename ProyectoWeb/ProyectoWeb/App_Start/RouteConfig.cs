@@ -13,17 +13,23 @@ namespace ProyectoWeb
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-              name: "Contacto",
-              url: "{contacto}/{action}",
-              defaults: new { controller = "Contactos", action = "Index" }
-          );
+          
 
             routes.MapRoute(
-              name: "Defaut",
-              url: "{home}/{action}",
+              name: "home",
+              url: "home",
               defaults: new { controller = "Home", action="Index" }
           );
+            routes.MapRoute(
+            name: "Contacto",
+            url: "home/contacto",
+            defaults: new { controller = "Contactos", action = "Index" }
+        );
+            routes.MapRoute(
+            name: "recomendacion",
+            url: "home/recomendacion",
+            defaults: new { controller = "Recomendaciones", action = "Index" }
+        );
 
             routes.MapRoute(
                 name: "Default",

@@ -2,4 +2,22 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Recos</h2>
+ @Html.ActionLink("Recomendar", "Create")
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Telefono </th>
+            <th>Email </th>
+            <th>Comentario</th>
+        </tr>
+
+        @foreach (var item in ViewBag.recomendaciones)
+        {
+            <tr>
+                <td>@item.Nombre </td>
+                <td>@item.Telefono</td>
+                <td>@item.Mail </td>
+                <td>@item.Comentario</td>
+            </tr>
+        }
+    </table>

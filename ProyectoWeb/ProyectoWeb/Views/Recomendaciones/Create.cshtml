@@ -1,11 +1,12 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Create";
 }
 
-
- <fieldset>
+<h2>Recomendacion</h2>
+@using (Html.BeginForm()) {
+    <fieldset>
         <legend>Datos</legend>
-     <form name="form1" method="post" action="Controllers/Mail.php">
+
         <div class="editor-label">
             <label>Nombre</label>
         </div>
@@ -13,23 +14,27 @@
             <input name="nombre"/>
         </div>
         <div class="editor-label">
+            <label>Telefono</label>
+        </div>
+        <div class="editor-field">
+            <input name="telefono"/>
+        </div>
+        <div class="editor-label">
             <label>Email</label>
         </div>
         <div class="editor-field">
             <input name="email"/>
         </div>
-     <div class="editor-label">
-            <label>Mensaje</label>
+        <div class="editor-label">
+            <label>Comentario</label>
         </div>
         <div class="editor-field">
-           <textarea name="mensaje" rows="4" cols="50">
+                <textarea name="comentario" rows="4" cols="50">
            </textarea>
         </div>
 
         <p>
-            <input type="submit" value="Enviar" />
-           
+            <input type="submit" value="Recomendar" />
         </p>
-         <p> &nbsp;</p>
-         </form>
     </fieldset>
+}
