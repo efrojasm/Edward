@@ -1,11 +1,12 @@
 ﻿@{
     ViewBag.Title = "Index";
+    
+
 }
-
-
+@using (Html.BeginForm()) {
  <fieldset>
         <legend>Datos</legend>
-     <form name="form1" method="post" action="Controllers/Mail.php">
+    
         <div class="editor-label">
             <label>Nombre</label>
         </div>
@@ -29,7 +30,7 @@
         <p>
             <input type="submit" value="Enviar" />
            
-        </p>
-         <p> &nbsp;</p>
-         </form>
+        </p>      
+    
     </fieldset>
+}
