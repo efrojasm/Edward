@@ -1,9 +1,10 @@
 ﻿@{
     ViewBag.Title = "Index";
-    
 
-}
-@using (Html.BeginForm()) {
+   
+} 
+@using (Html.BeginForm("SendMail", "Contactos", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
  <fieldset>
         <legend>Datos</legend>
     
@@ -11,19 +12,19 @@
             <label>Nombre</label>
         </div>
         <div class="editor-field">
-            <input name="nombre"/>
+            <input name="Subject"/>
         </div>
         <div class="editor-label">
             <label>Email</label>
         </div>
         <div class="editor-field">
-            <input name="email"/>
+            <input name="Mail"/>
         </div>
      <div class="editor-label">
             <label>Mensaje</label>
         </div>
         <div class="editor-field">
-           <textarea name="mensaje" rows="4" cols="50">
+           <textarea name="Body" rows="4" cols="50">
            </textarea>
         </div>
 
